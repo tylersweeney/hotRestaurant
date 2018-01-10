@@ -49,6 +49,12 @@ app.post("/api/tables", function(req,res){
     }
 });
 
+app.post("/api/clear"., function(req, res){
+    tables = [];
+    waitList = [];
+    return res.json("Tables have been cleared.")
+})
+
 app.listen(PORT, function() {
     console.log("App listening on PORT " + PORT);
   });
