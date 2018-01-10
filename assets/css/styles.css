@@ -29,7 +29,7 @@ p.message {
   font-size: 2em;
 }
 
-button {
+button, input[type=submit] {
   font-size: 1em;
   font-weight: bold;
   padding: 9px 11px;
@@ -45,7 +45,8 @@ button#home {
   color: black;
 }
 
-button#tables {
+button#tables,
+input[type=submit] {
   background-color: #3479B6;
 }
 
