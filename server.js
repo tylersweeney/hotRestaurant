@@ -36,7 +36,7 @@ app.get("/api/tables", function(req,res){
     res.json(tables);
 });
 
-app.get("/api/waitList", function(req,res){
+app.get("/api/waitlist", function(req,res){
     res.json(waitList);
 });
 
