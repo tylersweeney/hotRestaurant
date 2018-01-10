@@ -38,10 +38,10 @@
     $("#submit").on("click", function(event) {
       event.preventDefault();
       var tables = {
-        name: $("#name").val(),
-        phone: $("#phone").val(),
-        email: $("#email").val(),
-        id: $("#id").val()
+        name: $("#name").val().trim(),
+        phone: $("#phone").val().trim(),
+        email: $("#email").val().trim(),
+        id: $("#id").val().trim()
       };
 
       $.post("/api/tables", tables)
