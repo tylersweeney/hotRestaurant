@@ -30,6 +30,10 @@ app.get("/", function(req, res) {
 app.get("/assets/css/styles.css", function(req, res) {
     res.sendFile(path.join(__dirname, "assets/css/styles.css"));
   });
+
+  app.get("/assets/javascript/script.js", function(req, res) {
+    res.sendFile(path.join(__dirname, "assets/javascript/script.js"));
+  });
   
   
   app.get("/reserve", function(req, res) {
