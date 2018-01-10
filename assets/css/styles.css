@@ -41,7 +41,6 @@ button {
 }
 
 button#home {
-  display: none;
   background-color: white;
   color: black;
 }
@@ -62,4 +61,38 @@ hr {
 }
 #subheader{
   background-color: gray;
+}
+
+
+div.tableWrapper {
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  margin: 20px auto;
+  width: calc(80% + 100px);
+
+}
+
+div.wrapperHead {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #EDEDED;
+  /*border: 1px solid #cccccc;*/
+  padding: 5px;
+  padding-left: 10px;
+}
+
+
+.number {
+  background-color: #3479B6;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 2px .5em;
+  color: white;
+}
+
+.table {
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #EDEDED;
 }
