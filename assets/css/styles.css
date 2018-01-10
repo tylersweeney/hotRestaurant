@@ -1,0 +1,20 @@
+
+
+div#header {
+  padding: 50px;
+  background-color: gray;
+  border-radius: 10px;
+  width: 80%;
+  text-align: center;
+}
+
+h1 {
+
+}
+
+
+
+
+button#home {
+  display: none;
+}
