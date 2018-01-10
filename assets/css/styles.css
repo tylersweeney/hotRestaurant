@@ -18,3 +18,9 @@ h1 {
 button#home {
   display: none;
 }
+
+#input {
+}
+#subheader{
+  background-color: gray;
+}

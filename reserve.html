@@ -5,6 +5,7 @@
   <title>Make a Reservation</title>
   <!-- Latest compiled and minified CSS & JS -->
   <script src="https://code.jquery.com/jquery.js"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
 
 </head>
 <body>
@@ -13,10 +14,13 @@
       <h1>Hot Restaurant</h1>
       <h3>Make your Reservation</h3>
       <hr>
-
+      <button id="main">Home</button>
+      <button id="tables">View Tables</button>
   </div>
-  <div id="input">
+  <div id="container">
     <form>
+        <h3 id="subheader">Table Reservation</h3>
+        <div id="input">
         Name:<br>
         <input type="text" name="name"><br>
         Phone Number:<br>
@@ -27,6 +31,7 @@
         <input type="text" name="id"><br>
         <input type="submit" value="Submit"><br>
     </form>
+    </div>
   </div>
 </body>
 </html>
