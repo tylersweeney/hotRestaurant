@@ -16,6 +16,9 @@ app.use(bodyParser.json());
 var tables = [];
 var waitList = [];
 
+app.use(express.static('assets'));
+
+
 // Routes
 // =============================================================
 
