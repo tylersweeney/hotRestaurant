@@ -20,19 +20,17 @@
     <button id="home" title="home"><i class="fa fa-home fa-2" aria-hidden="true"></i></button>
   </div>
 
-
-
-  <div id="container">
+  <div id="reservationWrapper" class="tableWrapper">
+    <div class="wrapperHead">Table Reservation</div>
     <form>
-        <h3 id="subheader">Table Reservation</h3>
         <div id="input">
-        Name:<br>
+        <label for="name" class="required">Name</label><br>
         <input id="name" type="text" name="name"><br>
-        Phone Number:<br>
+        <label for="phone" class="required">Phone Number</label><br>
         <input id="phone" type="text" name="phone"><br>
-        Email:<br>
+        <label for="email" class="required">Email</label><br>
         <input id="email" type="email" name="email"><br>
-        Unique ID:<br>
+        <label for="id" class="required">Unique ID</label><br>
         <input id="id" type="text" name="id"><br>
         <input id="submit" type="submit" value="Submit"><br>
     </form>
@@ -44,23 +42,7 @@
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous"></script>
   <script src="https://use.fontawesome.com/17d34a2d31.js"></script>
-  <script type="text/javascript">
+  <script type="text/javascript" src="/assets/javascript/script.js"></script>
 
-    $("#submit").on("click", function(event) {
-      event.preventDefault();
-      var tables = {
-        name: $("#name").val(),
-        phone: $("#phone").val(),
-        email: $("#email").val(),
-        id: $("#id").val()
-      };
-
-      $.post("/api/tables", tables)
-      .then(function(data) {
-        console.log(data);
-        alert("Adding Reservation...");
-      });
-    });
-  </script>
 </body>
 </html>

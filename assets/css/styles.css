@@ -57,14 +57,20 @@ hr {
   color: #cccccc;
 }
 
-#input {
-}
-#subheader{
-  background-color: gray;
+input, label {
+  margin-left: 10px;
 }
 
+input {
+  margin-bottom: 10px;
+}
 
-div.tableWrapper {
+label {
+  font-weight: bold;
+}
+
+div.tableWrapper,
+div#reservationWrapper {
   border-radius: 5px;
   border: 1px solid #cccccc;
   margin: 20px auto;
@@ -76,11 +82,14 @@ div.wrapperHead {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   background-color: #EDEDED;
-  /*border: 1px solid #cccccc;*/
   padding: 5px;
   padding-left: 10px;
+  font-weight: bold;
 }
 
+div#input {
+  padding-top: 10px;
+}
 
 .number {
   background-color: #3479B6;
