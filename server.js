@@ -12,12 +12,12 @@ var PORT = 3000;
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+//app.use(express.static('hotRestaurant'));
+
+
 
 var tables = [];
 var waitList = [];
-
-app.use(express.static('assets'));
-
 
 // Routes
 // =============================================================
@@ -26,6 +26,11 @@ app.use(express.static('assets'));
 app.get("/", function(req, res) {
     res.sendFile(path.join(__dirname, "home.html"));
   });
+
+app.get("/assets/css/styles.css", function(req, res) {
+    res.sendFile(path.join(__dirname, "assets/css/styles.css"));
+  });
+  
   
   app.get("/reserve", function(req, res) {
     res.sendFile(path.join(__dirname, "reserve.html"));
