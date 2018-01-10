@@ -14,6 +14,12 @@ div#header {
   margin: 0 auto;
 }
 
+div#footer {
+  margin: 0 auto;
+  padding-top: 20px;
+  width: 85%;
+}
+
 h1 {
   font-size: 4em;
   font-family: 'Raleway', 'Georgia', Times, Times New Roman, serif;
