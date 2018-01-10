@@ -1,22 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
   <meta charset="UTF-8">
-  <title>Make a Reservation</title>
+  <title>Hot Restaurant - Make a Reservation</title>
   <!-- Latest compiled and minified CSS & JS -->
   <script src="https://code.jquery.com/jquery.js"></script>
   <link rel="stylesheet" href="assets/css/styles.css">
-
+  <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
+
 <body>
 
   <div id="header">
-      <h1>Hot Restaurant</h1>
-      <h3>Make your Reservation</h3>
-      <hr>
-      <button id="main">Home</button>
-      <button id="tables">View Tables</button>
+    <h1><i class="fa fa-fire fa-4" aria-hidden="true"></i> Hot Restaurant</h1>
+    <hr>
+    <p class="message">Make Your Reservation</p>
+    <button id="tables"><i class="fa fa-table fa-2" aria-hidden="true"></i> View Tables</button>
+    <button id="home" title="home"><i class="fa fa-home fa-2" aria-hidden="true"></i></button>
   </div>
+
+
+
   <div id="container">
     <form>
         <h3 id="subheader">Table Reservation</h3>
@@ -28,11 +33,17 @@
         Email:<br>
         <input id="email" type="email" name="email"><br>
         Unique ID:<br>
-        <input type="text" name="id"><br>
+        <input id="id" type="text" name="id"><br>
         <input id="submit" type="submit" value="Submit"><br>
     </form>
     </div>
   </div>
+
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+  <script src="https://use.fontawesome.com/17d34a2d31.js"></script>
   <script type="text/javascript">
 
     $("#submit").on("click", function(event) {
