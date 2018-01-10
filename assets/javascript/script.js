@@ -21,4 +21,15 @@ $('#tables').click(function() {
          console.log(data);
          alert("Adding Reservation...");
        });
+       if (tables.length<5){
+            var newTable = $("<div>", {
+             "class": "table",
+             "id" : "current-table"
+            });
+       } else {
+        var newTable = $("<div>", {
+            "class": "table",
+            "id" : "wait-table"
+         });
+       }
      });
