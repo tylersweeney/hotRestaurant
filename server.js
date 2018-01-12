@@ -34,12 +34,16 @@ app.get("/assets/css/styles.css", function(req, res) {
   app.get("/assets/javascript/script.js", function(req, res) {
     res.sendFile(path.join(__dirname, "assets/javascript/script.js"));
   });
-  
-  
+
+  app.get("/assets/javascript/tables.js", function(req, res) {
+    res.sendFile(path.join(__dirname, "assets/javascript/tables.js"));
+  });
+
+
   app.get("/reserve", function(req, res) {
     res.sendFile(path.join(__dirname, "reserve.html"));
   });
-  
+
   app.get("/tables", function(req, res) {
     res.sendFile(path.join(__dirname, "tables.html"));
   });
@@ -70,4 +74,4 @@ app.post("/api/clear", function(req, res){
 app.listen(PORT, function() {
     console.log("App listening on PORT " + PORT);
   });
-  
+
